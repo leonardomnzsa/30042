@@ -1,11 +1,10 @@
 name: stf_dashboard_env
 channels:
-  - https://repo.anaconda.com/pkgs/snowflake # Canal principal permitido
-  - nodefaults # Necessário para evitar canais padrão indesejados
+  - https://repo.anaconda.com/pkgs/snowflake
+  - nodefaults
 dependencies:
-  - python=3.11 # Mantém a versão do Python
+  - python=3.10 # <<< MUDANÇA AQUI: Alterado de 3.11 para 3.10
   - pip
-  # Lista de pacotes que esperamos encontrar no canal Snowflake:
   - pandas
   - openpyxl 
   - streamlit
