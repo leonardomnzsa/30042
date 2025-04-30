@@ -3,7 +3,7 @@ channels:
   - https://repo.anaconda.com/pkgs/snowflake
   - nodefaults
 dependencies:
-  - python=3.10 # <<< MUDANÇA AQUI: Alterado de 3.11 para 3.10
+  - python=3.11 # <<< MUDANÇA AQUI: Voltando para 3.11
   - pip
   - pandas
   - openpyxl 
