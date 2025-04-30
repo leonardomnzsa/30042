@@ -1,14 +1,15 @@
 name: stf_dashboard_env
 channels:
-  - conda-forge
-  - defaults
+  - https://repo.anaconda.com/pkgs/snowflake # Canal principal permitido
+  - nodefaults # Necessário para evitar canais padrão indesejados
 dependencies:
-  - python=3.11 # Ou a versão que o Snowflake suporta/recomenda
+  - python=3.11 # Mantém a versão do Python
   - pip
-  - bcrypt
+  # Lista de pacotes que esperamos encontrar no canal Snowflake:
   - pandas
-  - openpyxl # Necessário para ler .xlsx com pandas
+  - openpyxl 
   - streamlit
   - altair
+  - bcrypt
   - openai
-  # Adicione quaisquer outras dependências diretas se necessário
+  # Adicione outras dependências se houver
